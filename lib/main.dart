@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 import 'dart:convert';
 import 'package:http/http.dart' as http;
 import 'dart:async';
-
-//import 'package:weather/page2.dart';
 int v3 = 0;
 void main() {
   runApp(MaterialApp(
@@ -12,8 +10,6 @@ void main() {
   ));
 }
 
-//  '/': (BuildContext context) => HomePage()
-// '/signup': (BuildContext context) => SignUpPage(),
 
 Future getdata(url) async {
   http.Response response = await http.get(url);
@@ -40,7 +36,7 @@ class _MyApp extends State<MyApp> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        backgroundColor: Colors.purple[900],
+        backgroundColor: Colors.cyan,
         body: SafeArea(
           child: ListView(
             children: <Widget>[
@@ -58,7 +54,7 @@ class _MyApp extends State<MyApp> {
                 child: Text(
                   "Check the rate of pollution near you",
                   style: TextStyle(
-                      color: Colors.white,
+                      color: Colors.blue[900],
                       fontWeight: FontWeight.bold,
                       fontSize: 25),
                 ),
@@ -114,7 +110,7 @@ class _MyApp extends State<MyApp> {
                 child: Text(
                   status,
                   style: TextStyle(
-                      color: Colors.white,
+                      color: Colors.blue[900],
                       fontSize: 15.0,
                       fontWeight: FontWeight.bold),
                 ),
@@ -124,7 +120,7 @@ class _MyApp extends State<MyApp> {
                 child: Text(
                   "ozone: " + v1.toString() + " " + " microgram/metre^3",
                   style: TextStyle(
-                      color: Colors.white,
+                      color: Colors.blue[900],
                       fontSize: 15.0,
                       fontWeight: FontWeight.bold),
                 ),
@@ -137,7 +133,7 @@ class _MyApp extends State<MyApp> {
                       " " +
                       "microgram/metre^3",
                   style: TextStyle(
-                      color: Colors.white,
+                      color: Colors.blue[900],
                       fontSize: 15.0,
                       fontWeight: FontWeight.bold),
                 ),
@@ -150,7 +146,7 @@ class _MyApp extends State<MyApp> {
                       " " +
                       "microgram/m^3",
                   style: TextStyle(
-                      color: Colors.white,
+                      color: Colors.blue[900],
                       fontSize: 15.0,
                       fontWeight: FontWeight.bold),
                 ),
@@ -163,7 +159,7 @@ class _MyApp extends State<MyApp> {
                       " " +
                       "microgram/m^3",
                   style: TextStyle(
-                      color: Colors.white,
+                      color: Colors.blue[900],
                       fontSize: 15.0,
                       fontWeight: FontWeight.bold),
                 ),
